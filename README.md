@@ -10,8 +10,8 @@ Your boss has asked you to add a new button to the front page of their multi-mil
 * Let's get inside the directory `branchingTutorial` we just cloned.
 * Inside there should be another directory titled `button1Feature`. `cd` into it.
 * Now it's time to see what branching can do for us. 
-* `$ git branch` will show us what branches we have at our disposal, in this example, there are three.
-* *Note* The asterisk and/or highlighted branch, this is the branch you are ON.
+* `$ git branch` will show us what branches we have at our disposal.
+* *Note* The asterisk and/or highlighted branch is the branch you are ON.
 * To make our new solution branch, type `$ git branch mySolution`. This will create a new branch titled "mySolution".
 * *Note* Whenever you make a new branch, it will be a copy of the branch you are currently ON, not neccesarily a copy of `master`.
 * `$ git branch` one more time to make sure that we see the new branch we just created. We should see
