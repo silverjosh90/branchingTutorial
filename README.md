@@ -13,22 +13,22 @@ Your boss has asked you to add a new button to the front page of their multi-mil
 * `$ git branch` will show us what branches we have at our disposal, in this example, there are three.
 * *Note* The asterisk and/or highlighted branch, this is the branch you are ON.
 * To make our new solution branch, type `$ git branch mySolution`. This will create a new branch titled "mySolution".
-* *Note* Whenever you make a new branch, it will be a copy of the branch you are currently ON, not neccesarily `master`
+* *Note* Whenever you make a new branch, it will be a copy of the branch you are currently ON, not neccesarily a copy of `master`.
 * `$ git branch` one more time to make sure that we see the new branch we just created. We should see
 ```
-      deleteMe
     * master
       mySolution
-      solution
 ```
-* For the sake of branching practice, let's delete the branch `deleteMe` (it was asking for it anyway). `$ git branch -d deleteMe` should do the trick.
-* *Note* Git does not ask twice, so make sure that you're careful when deleting...
+* `$ git checkout mySolution` will put us on our shiny new branch we just made.
+* Open the `index.html` file in your browser so we can see the changes we are about to make.
+![Button One](https://media.giphy.com/media/xghZ09m2CLTDa/giphy.gif)
 
 ###Add Feature
 * Now that we are safely away from `master` on our `mySolution` branch, we can hack away and make changes fearlessly!
-* Open the files in your favorite text editor with `$ atom .` or `$ sublime .` etc...
-* Lets add a new button that triggers an alert inside the `roundedBox` article. (if you need help with the code you can use the solution branch)
-* Our app should look something like this now -
+* Open the files in your favorite text editor with `$ atom .` or `$ sublime .`  etc.
+* Let's add a new button that triggers an alert inside the `roundedBox` article. (if you need help with the code you can use the hidden branch 'solution'. `$ git checkout solution`)
+* Our app should look something like this now.                
+![Button Two](https://media.giphy.com/media/EdytL3UyLXBkY/giphy.gif)
 * If so, let's commit and push! But remember, we are NOT pushing to `master`, we are pushing to `mySolution`. If we push to `master` we override everything and totally undermine our reason for branching. And your head implodes. :boom:
 
 `$ git add -A`
@@ -40,8 +40,8 @@ Your boss has asked you to add a new button to the front page of their multi-mil
 * You have now have a safe feature branch and an untainted master up in the GitHub magic cloud! :clap:
 
 ###Next Steps
-* Now if the changes were exactly what the boss wanted, you would merge your changes. Which is much more complicated when you are working with other developers, but for now, it's just you, so you can safely merge your `master` branch and your `mySolution` branch.
-* Go ahead and switch back to our `master` branch with `$ git checkout master` so we can merge `mySolution` into it.
+* Now if the changes were exactly what the boss wanted, you would merge your changes. Which is much more complicated when you are working with other developers, but for now, it's just lonesome ol' you, so you can safely merge your `master` branch and your `mySolution` branch.
+* Go ahead and switch back to `master` with `$ git checkout master` so we can merge `mySolution` into it.
 * Do the merge! `$ git merge mySolution`
 * Now all the work we did in `mySolution` is part of `master`, and we don't need it anymore!
 * After we have double checked to make sure that everything is working fine on `master`, let's blow up `mySolution`
