@@ -16,7 +16,22 @@ h1 {
   margin: auto;
   font-weight: lighter;
 }
-button {
+h3 {
+  display: flex;
+  margin: auto;
+  font-weight: lighter;
+}
+.clickMe {
+  margin: auto;
+  border-radius: 5000px;
+  color: white;
+  background-color: rgb(49, 116, 138);
+  width: 25%;
+  height: 10%;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+.clickMeToo {
   margin: auto;
   border-radius: 5000px;
   color: white;
